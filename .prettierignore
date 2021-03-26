@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+lib
+dist
+.cache
+neardev
+out
+assets
+__mocks__

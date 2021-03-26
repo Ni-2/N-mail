@@ -14,7 +14,8 @@
     "prestart": "npm run build:contract:debug && npm run dev:deploy:contract",
     "start": "echo The app is starting! It will automatically open in your browser when ready && env-cmd -f ./neardev/dev-account.env parcel src/index.html --open",
     "dev": "nodemon --watch contract -e ts --exec \"npm run start\"",
-    "test": "npm run build:contract:debug && cd contract && npm run test && cd .. && jest test --runInBand"
+    "test": "npm run build:contract:debug && cd contract && npm run test && cd .. && jest test --runInBand",
+    "prettier": "npx prettier --write ."
   },
   "devDependencies": {
     "@babel/core": "~7.13.1",
@@ -28,10 +29,12 @@
     "near-cli": "~1.5.3",
     "nodemon": "~2.0.3",
     "parcel-bundler": "~1.12.4",
+    "prettier": "^2.2.1",
     "react-test-renderer": "~17.0.1",
     "shelljs": "~0.8.4"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
     "near-api-js": "~0.36.3",
     "react": "~17.0.1",
     "react-dom": "~17.0.1",
